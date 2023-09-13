@@ -6,6 +6,6 @@ Shipping costs $3 for the first copy and 75 cents for each additional copy. Calc
 wholesale costs for 60 copies.
 
 coverPrice = 24.95
-bookStoreCoverPrice = coverPrice * 
+bookStoreCoverPrice = coverPrice * 0.60
 
 totalWholesaleCosts
