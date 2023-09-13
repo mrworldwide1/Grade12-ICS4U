@@ -17,8 +17,9 @@ addtlCopyShipping = 0.75
 copies = 60
 
 def wholeSaleCost(coverPrice, discount, copies, firstShippingCost, addtlShippingCost):
-  bookStore
-  
+  bookStoreCost = coverPrice 
+
+  wholeSaleCosts = 
 return wholeSaleCosts
 
 
