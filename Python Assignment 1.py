@@ -60,9 +60,9 @@ zeroDivError = 2/0
 # Hint: for the best solution, you will need the modulo operator.
 
 def alarm(currentTime, setHours):
-  # subtracts 1 hour from alarm duration and adds 1 hour to initial (current) time until the duration is 0
+  # subtracts 1 hour from alarm duration and adds 1 hour to current time until the duration is 0
   while setHours > 0:
-    # modulo divide current time by 24 at midnight to simulate new day
+    # modulo divide current time by 24 at midnight to simulate a new day passing
     if currentTime >= 24:
       currentTime = currentTime % 24
     currentTime += 1
