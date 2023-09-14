@@ -5,22 +5,18 @@
 # The cover price of a book is $24.95, but bookstores get a 40 percent discount.
 # Shipping costs $3 for the first copy and 75 cents for each additional copy. Calculate the total wholesale costs for 60 copies.
 
-# Book cover price
-coverPrice = 24.95
-
-# Bookstore discount
-discount = 0.60
-
 # Price of book for bookstore
 firstCopyShipping = 3
 addtlCopyShipping = 0.75
 copies = 60
 
-def wholeSaleCost(coverPrice, discount, copies, firstShippingCost, addtlShippingCost):
-  bookStoreCost = coverPrice * 0.60
-  wholeSaleCosts = 
-return wholeSaleCosts
+def wholeSaleCost(coverPrice, percentDiscount, copies, firstShippingCost, addtlShippingCost):
+  # discount calculated from percent
+  discount = 1 - (40 / 100)
+  bookStoreCost = coverPrice * discount
+    return firstShippingCost + (bookStoreCost * copies)
 
+print(totalCosts(24.95, 40, 60, 3, 0.75)
 
 # Exercise 3.2
 # Can you identify and explain the errors in the following lines of code? Correct them.=
@@ -66,9 +62,9 @@ zeroDivError = 2/0
 # Hint: for the best solution, you will need the modulo operator.
 
 def alarm(currentTime, setHours):
-  # basically subtracts 1 hour from alarm duration and adds 1 hour to initial (current) time until the duration is 0
+  # subtracts 1 hour from alarm duration and adds 1 hour to initial (current) time until the duration is 0
   while setHours > 0:
-    # modulo divide current time by 24 at midnight to simulate a new day
+    # modulo divide current time by 24 at midnight to simulate new day
     if currentTime >= 24:
       currentTime = currentTime % 24
     currentTime += 1
