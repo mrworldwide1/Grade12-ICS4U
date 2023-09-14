@@ -9,9 +9,9 @@ def wholeSaleCost(coverPrice, percentDiscount, copies, firstShippingCost, addtlS
   # discount calculated from percent
   bookStoreCost = coverPrice * (1 - (percentDiscount / 100))
   if copies <= 1:
-    return firstShippingCost + (bookStoreCost * copies)
+    return "$" + firstShippingCost + (bookStoreCost * copies)
   else:
-    return firstShippingCost + ((bookStoreCost + addtlShippingCost) * copies)
+    return "$" + firstShippingCost + ((bookStoreCost + addtlShippingCost) * copies)
 
 print(wholeSaleCost(24.95, 40, 60, 3, 0.75))
 
