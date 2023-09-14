@@ -5,22 +5,17 @@
 # Shipping costs $3 for the first copy and 75 cents for each additional copy. Calculate the total wholesale costs for 60 copies.
 
 def wholeSaleCost(coverPrice, percentDiscount, copies, firstShippingCost, addtlShippingCost):
-  # discount calculated from percent
+  # finds each book's cost for bookstore, excluding shipping
   bookStoreCost = coverPrice * (1 - (percentDiscount / 100))
+  # add shipping cost
   if copies <= 1:
+    # only add the initial shipping cost
     return "$" + str(firstShippingCost + (bookStoreCost * copies))
   else:
+    # add initial & recurring shipping cost
     return "$" + str(firstShippingCost + ((bookStoreCost + addtlShippingCost) * copies))
 
-print(wholeSaleCost(24.95, 40, 1, 3, 0.75))
-
-# def wholeSaleCost(coverPrice, percentDiscount, copies, firstShippingCost, addtlShippingCost):
-#   # discount calculated from percent
-#   discount = 1 - (percentDiscount / 100)
-#   bookStoreCost = coverPrice * discount
-#     return firstShippingCost + (bookStoreCost * copies)
-
-# print(totalCosts(24.95, 40, 60, 3, 0.75)
+print(wholeSaleCost(24.95, 40, 60, 3, 0.75))
 
 
 # Exercise 3.2
@@ -41,10 +36,8 @@ print(f"A message")
 
 
 # Exercise 3.3
-# Exercise 3.3 When something is wrong with your code, Python will raise errors. Often
-# these will be “syntax errors” that signal that something is wrong with the form of your
-# code (e.g., the code in the previous exercise raised a SyntaxError). There are also “runtime
-# errors,” which signal that your code was in itself formally correct, but that something went
+# When something is wrong with your code, Python will raise errors. Often these will be “syntax errors” that signal that something is wrong with the form of your
+# code (e.g., the code in the previous exercise raised a SyntaxError). There are also “runtime errors,” which signal that your code was in itself formally correct, but that something went
 # wrong during the code’s execution. A good example is the ZeroDivisionError, which indicates that you tried to divide a number by zero (which, as you may know, is not allowed).
 # Try to make Python raise such a ZeroDivisionError.
 
