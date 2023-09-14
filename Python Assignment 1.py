@@ -1,17 +1,28 @@
 ## CodersA-Ch-3-Exercises.pdf
 
-
 # Exercise 3.1
 # The cover price of a book is $24.95, but bookstores get a 40 percent discount.
 # Shipping costs $3 for the first copy and 75 cents for each additional copy. Calculate the total wholesale costs for 60 copies.
 
+
 def wholeSaleCost(coverPrice, percentDiscount, copies, firstShippingCost, addtlShippingCost):
   # discount calculated from percent
-  discount = 1 - (percentDiscount / 100)
-  bookStoreCost = coverPrice * discount
+  bookStoreCost = coverPrice * (1 - (percentDiscount / 100))
+  if copies <= 1:
     return firstShippingCost + (bookStoreCost * copies)
+  else:
+    return firstShippingCost + ((bookStoreCost + addtlShippingCost) * copies)
 
-print(totalCosts(24.95, 40, 60, 3, 0.75)
+print(wholeSaleCost(24.95, 40, 60, 3, 0.75))
+
+# def wholeSaleCost(coverPrice, percentDiscount, copies, firstShippingCost, addtlShippingCost):
+#   # discount calculated from percent
+#   discount = 1 - (percentDiscount / 100)
+#   bookStoreCost = coverPrice * discount
+#     return firstShippingCost + (bookStoreCost * copies)
+
+# print(totalCosts(24.95, 40, 60, 3, 0.75)
+
 
 # Exercise 3.2
 # Can you identify and explain the errors in the following lines of code? Correct them.=
