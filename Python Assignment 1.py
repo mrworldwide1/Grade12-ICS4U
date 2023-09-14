@@ -35,7 +35,7 @@ print("A message")
 # The second line uses a quote and apostrophy around the input but only one type can be used
 print('A message')
 
-# The third line's f-string is placed in the incorrect place, it must before the input and only one type of quotes can be used
+# The third line's f-string is placed in the incorrect place, it must be placed before the input and only one type of quotes can be used
 print(f"A message")
 
 
