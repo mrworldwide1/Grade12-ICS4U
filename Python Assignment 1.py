@@ -4,16 +4,15 @@
 # The cover price of a book is $24.95, but bookstores get a 40 percent discount.
 # Shipping costs $3 for the first copy and 75 cents for each additional copy. Calculate the total wholesale costs for 60 copies.
 
-
 def wholeSaleCost(coverPrice, percentDiscount, copies, firstShippingCost, addtlShippingCost):
   # discount calculated from percent
   bookStoreCost = coverPrice * (1 - (percentDiscount / 100))
   if copies <= 1:
-    return "$" + firstShippingCost + (bookStoreCost * copies)
+    return "$" + str(firstShippingCost + (bookStoreCost * copies))
   else:
-    return "$" + firstShippingCost + ((bookStoreCost + addtlShippingCost) * copies)
+    return "$" + str(firstShippingCost + ((bookStoreCost + addtlShippingCost) * copies))
 
-print(wholeSaleCost(24.95, 40, 60, 3, 0.75))
+print(wholeSaleCost(24.95, 40, 1, 3, 0.75))
 
 # def wholeSaleCost(coverPrice, percentDiscount, copies, firstShippingCost, addtlShippingCost):
 #   # discount calculated from percent
