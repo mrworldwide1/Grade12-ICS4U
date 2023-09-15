@@ -28,7 +28,7 @@ print(wholeSaleCost(24.95, 40, 60, 3, 0.75))
 # The first line's error is that there is a period after the closing bracket. Move the period into the quote
 print("A message")
 
-# The second line uses a quote and apostrophy around the input. Only single quotes or double quotes can be used so replace both quotes with ' or "
+# The second line uses a quote and apostrophy around the input. Only single quotes or double quotes can be used in a string, so replace both quotes with ' or both quotes with "
 print('A message')
 
 # The third line's f-string is placed in the incorrect place, it must be placed before the input and only one type of quotes can be used
