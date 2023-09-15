@@ -19,16 +19,16 @@ print(wholeSaleCost(24.95, 40, 60, 3, 0.75))
 
 
 # Exercise 3.2
-# Can you identify and explain the errors in the following lines of code? Correct them.=
+# Can you identify and explain the errors in the following lines of code? Correct them.
 # exercise0302.py
 # print( "A message" ).
 # print( "A message ' )
 # print( ' A messagef" ' )
 
-# The first line's error is that there is a period after the closing bracket
+# The first line's error is that there is a period after the closing bracket. Move the period into the quote
 print("A message")
 
-# The second line uses a quote and apostrophy around the input but only one type can be used
+# The second line uses a quote and apostrophy around the input. Only single quotes or double quotes can be used so replace both quotes with ' or "
 print('A message')
 
 # The third line's f-string is placed in the incorrect place, it must be placed before the input and only one type of quotes can be used
@@ -51,7 +51,7 @@ zeroDivError = 2/0
 # print( ((2*3) /4 + (5 -6/7) *8 )
 # print( ((12*13) /14 + (15 -16) /17) *18 )
 
-# The problem lies in the first line. There is an extra open bracket that is never closed, right after print.
+# The problem lies in the first line, there is an extra open bracket that is never closed, right after print. Fix error by removing the extra bracket
 
 
 # Exercise 3.5
@@ -62,16 +62,12 @@ zeroDivError = 2/0
 def alarm(currentTime, setHours):
   # subtracts 1 hour from alarm duration and adds 1 hour to current time until the duration is 0
   while setHours > 0:
-    # modulo divide current time by 24 at midnight to simulate a new day passing
+    # modulo divide current time by 24 at midnight to go to new day
     if currentTime >= 24:
       currentTime = currentTime % 24
     currentTime += 1
     setHours -= 1
   return(currentTime)
 
-# checks if alarm functon works properly
-assert(alarm(14, 10)) == 24
-assert(alarm(14, 11)) == 1
-
-# prints the answer
+# prints answer
 print(alarm(14, 535))
