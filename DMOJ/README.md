@@ -1,1 +1,1 @@
-my DMOJ profile: https://dmoj.ca/user/arc420/solved
+my DMOJ profile with all submissions: https://dmoj.ca/user/arc420/solved
