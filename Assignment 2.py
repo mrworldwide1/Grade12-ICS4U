@@ -10,10 +10,12 @@ average = (var1+var2+var3) / 3
 # print average
 print(f"The average of the three variables is {average}")
 
+
 ## 4.2
 radius = 999
 pi = 3.14159
 print(f"The surface area of a circle is... {(radius**2)*pi}")
+
 
 ## 4.3
 # Convert dollar amount to cents
@@ -21,7 +23,6 @@ amount = 11.52
 cents = amount * 100
 
 # Calculate number of coins that can go into cents and remainder
-
 # dollars
 dollarsRemainder = cents % 100
 dollars = cents / 100
@@ -53,9 +54,10 @@ print(f"Pennies: {pennies}")
 
 ## 4.4
 a = 17; b = 23
-# add two more lines of code here to cause swapping of a and b
+# switch values by adding and subtracting difference
 a += b
 a = a-17
 b = a-23+17
 
+# print answer
 print(f"a = {a} b = {b}")
