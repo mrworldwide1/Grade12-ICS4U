@@ -54,10 +54,10 @@ print(f"Pennies: {pennies}")
 
 ## 4.4
 a = 17; b = 23
-# switch values by adding and subtracting difference
 a += b
-a = a-17
-b = a-23+17
+# switch values by adding and subtracting difference
+b = a - b
+a -= b
 
 # print answer
 print(f"a = {a} b = {b}")
