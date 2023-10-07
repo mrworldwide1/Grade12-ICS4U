@@ -44,7 +44,6 @@ penniesRemainder = nickelsRemainder % 1
 pennies = nickelsRemainder / 1
 
 # print answer
-print(f"Max number of coins needed in ${amount} is:")
 print(f"Dollars: {dollars}")
 print(f"Quarters: {quarters}")
 print(f"Dimes: {dimes}")
