@@ -43,7 +43,7 @@ nickels = (dimesRemainder - nickelsRemainder) / 5
 penniesRemainder = nickelsRemainder % 1
 pennies = (nickelsRemainder - penniesRemainder) / 1
 
-# print answer; number of coins
+# print answer as min number of coins needed
 print(f"Dollars: {dollars}")
 print(f"Quarters: {quarters}")
 print(f"Dimes: {dimes}")
