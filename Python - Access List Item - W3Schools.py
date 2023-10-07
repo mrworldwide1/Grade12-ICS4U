@@ -4,7 +4,7 @@
 # A programmer can access a range of index in a list by first typing the name of the list, followed by the range of index in square brackets. Don't forget to put everything in round brackets.
 # if you wish to access a single index in a list, you just need the one index number.
 # Example: myList[1] specifies second thing in the list
-# myList[0:2] specifies first to third item in the list
+# myList[0:2] specifies first to third thing in the list
 
 def listRange(list):
   return(list[1:3])
