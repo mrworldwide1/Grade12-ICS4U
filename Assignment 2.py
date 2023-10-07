@@ -14,7 +14,7 @@ print(f"The average of the three variables is {average}")
 ## 4.2
 radius = 999
 pi = 3.14159
-print(f"The surface area of a circle is... {(radius**2)*pi}")
+print(f"The surface area of a circle with radius {radius} is... {(radius**2)*pi}")
 
 
 ## 4.3
