@@ -25,23 +25,23 @@ cents = amount * 100
 # Calculate number of coins that can go into cents and remainder
 # dollars
 dollarsRemainder = cents % 100
-dollars = cents / 100
+dollars = (cents - dollarsRemainder) / 100
 
 # quarters
 quartersRemainder = dollarsRemainder % 25
-quarters = dollarsRemainder / 25
+quarters = (dollarsRemainder - quartersRemainder) / 25
 
 # dimes
 dimesRemainder = quartersRemainder % 10
-dimes = quartersRemainder / 10
+dimes = (quartersRemainder - dimesRemainder) / 10
 
 # nickels
 nickelsRemainder = dimesRemainder % 5
-nickels = dimesRemainder / 5
+nickels = (dimesRemainder - nickelsRemainder) / 5
 
 # pennies
 penniesRemainder = nickelsRemainder % 1
-pennies = nickelsRemainder / 1
+pennies = (nickelsRemainder - penniesRemainder) / 1
 
 # print answer
 print(f"Dollars: {dollars}")
