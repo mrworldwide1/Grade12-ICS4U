@@ -32,16 +32,16 @@ print('The third side length is: ' + str(pythag(b, c)))
 # their average, rounded to 2 decimals.
 
 numbers = []
-avgStorage = 0
+sum = 0
 
 for i in range (3):
     numbers.append(int(input("Enter a number: ")))
 for num in numbers:
-   avgStorage += num
+   sum += num
 
 print(f"Largest number: {max(numbers)}")
 print(f"Smallest number: {min(numbers)}")
-print(f"Average: {round(avgStorage/3, 2)}")
+print(f"Average: {round(sum/3, 2)}")
 
 # Exercise 5.4 Calculate the value of e to the power of -1, 0, 1, 2, and 3, and display the
 # results, with 5 decimals, in a nicely formatted manner.
