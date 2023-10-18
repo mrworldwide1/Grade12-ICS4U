@@ -28,12 +28,12 @@ c = int(input('Second side length of your right triangle: '))
 print('The third side length is: ' + str(pythag(b, c)))
 
 
-# Exercise 5.3 Ask the user to enter three numbers. Then print the largest, the smallest, and
-# their average, rounded to 2 decimals.
+# Exercise 5.3 Ask the user to enter three numbers. Then print the largest, the smallest, and their average, rounded to 2 decimals.
 
 numbers = []
 sum = 0
 
+# calculate by adding the 3 numbers to list and count the sum
 for i in range (3):
     numbers.append(int(input("Enter a number: ")))
 for num in numbers:
