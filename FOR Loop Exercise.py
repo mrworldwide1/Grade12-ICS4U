@@ -4,7 +4,7 @@
 # Oct 18, 2023
 # Lucas Leung
 
-# print multiplication table of specific number between 0-13
+# print multiplication table of specific number 0-13
 specificNum = 10
 print(f"Multiplication table for {specificNum}:")
 
@@ -13,7 +13,7 @@ for i in range(14):
 
 print('-------------------------------------------------')
 
-# for all numbers between 0-13
+# print multiplication table for all numbers 0-13
 for number in range(14):
     print(f"Multiplication table for {number}:")
     for digit in range(14):
