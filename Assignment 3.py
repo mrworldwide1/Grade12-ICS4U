@@ -33,18 +33,20 @@ print('The third side length is: ' + str(pythag(b, c)))
 numbers = []
 sum = 0
 
-# calculate by adding the 3 numbers to list and count the sum
+# add the 3 numbers to empty list then count the sum
 for i in range (3):
     numbers.append(int(input("Enter a number: ")))
 for num in numbers:
    sum += num
 
+# print largest/smallest/average by examining list
 print(f"Largest number: {max(numbers)}")
 print(f"Smallest number: {min(numbers)}")
 print(f"Average: {round(sum/3, 2)}")
 
-# Exercise 5.4 Calculate the value of e to the power of -1, 0, 1, 2, and 3, and display the
-# results, with 5 decimals, in a nicely formatted manner.
+# Exercise 5.4 Calculate the value of e to the power of -1, 0, 1, 2, and 3, and display the results, with 5 decimals, in a nicely formatted manner.
+
+# calculate and nicely print value of e to power of -1, 0, 1, 2, 3 with 5 decimals
 print(f"The value of e raised to the power of -1 is: {round(math.e**-1, 5)}")
 print(f"The value of e raised to the power of 0 is: {round(math.e**0, 5)}")
 print(f"The value of e raised to the power of 1 is: {round(math.e**1, 5)}")
@@ -58,6 +60,5 @@ print(f"The value of e raised to the power of 3 is: {round(math.e**3, 5)}")
 # The random module generates a random float between 0.1 and 1.0.
 # Therefore, convert the output into an integer by multiplying by 10, and then round it, to get rid of the decimals.
 # Ex. 0.47732 would become 4
-
 randInt = round(random.random()*10)
 print(randInt)
