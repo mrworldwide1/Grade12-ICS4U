@@ -47,7 +47,7 @@ print(f"Average: {round(sum/3, 2)}")
 
 # Exercise 5.4 Calculate the value of e to the power of -1, 0, 1, 2, and 3, and display the results, with 5 decimals, in a nicely formatted manner.
 
-# calculate and nicely print value of e to power of -1, 0, 1, 2, 3 with 5 decimals
+# calculate and prints 5 decimal rounded value of e to power of -1, 0, 1, 2, 3 
 print(f"The value of e raised to the power of -1 is: {round(math.e**-1, 5)}")
 print(f"The value of e raised to the power of 0 is: {round(math.e**0, 5)}")
 print(f"The value of e raised to the power of 1 is: {round(math.e**1, 5)}")
