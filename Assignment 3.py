@@ -17,6 +17,7 @@ print(len(input()))
 # in a nicely formatted way. You may ignore the fact that the user can enter negative or zero
 # lengths for the sides.
 
+# takes in 2 known triangle side lengths and return third side length by applying pythagorean theorem
 def pythag(b, c):
   return math.sqrt(b**2 + c**2)
 
