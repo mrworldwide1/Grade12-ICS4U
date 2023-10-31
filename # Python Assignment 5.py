@@ -11,7 +11,7 @@ import math
 
 # function that inputs number and prints multiplication table for it
 def multiTable(num):
-    # multiply number parameter by an incrementing i value
+    # multiply specified number by an incrementing i value
     for i in range(10):
         print(f"{i+1} * {num} = {(i+1)*num}")
 
