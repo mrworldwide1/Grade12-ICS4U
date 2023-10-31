@@ -9,7 +9,7 @@ import math
 # Exercise 8.1 Create a function that gets a number as parameter, and then prints the mulitiplication table for that number from 1 to 10.
 # E.g., when the parameter is 12, the first line printed is “1 * 12 = 12” and the last line printed is “10 * 12 = 120.”
 
-# multiplication table function
+# function that inputs number and prints multiplication table for it
 def multiTable(num):
     # multiply number parameter by an incrementing i value
     for i in range(10):
@@ -88,7 +88,7 @@ print(quadSolve(-1, 3, -5))
 # ugly about this code, namely the fact that if is smaller than zero or higher than 1000, the
 # code still asks for even when it can know that it has to ask a new value for . I also re-
 # marked that you can resolve this in an easy way by using a function. Create a function and
-# insert it in this code, so that this issue gets fixed. Also get rid of the () and thus the possible ugly output by introducing a () function.
+# insert it in this code, so that this issue gets fixed. Also get rid of the () and thus the possible ugly output by introducing a main () function.
 
 
 
