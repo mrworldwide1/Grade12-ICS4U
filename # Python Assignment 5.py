@@ -68,7 +68,7 @@ print(commonChar("Eren", "Yeager"))
 # of solutions. The second is the first solution. The third is the second solution. Any of the
 # solutions that do not exist, you can return as zero.
 
-# finds roots of quadratic equation taking in a/b/c terms
+# function to solve quadratic equation taking in each term as parameter
 def quadSolve(A, B, C):
     if (B**2)-4*(A)*(C) == 0:
         numSolutions = 1
