@@ -70,12 +70,15 @@ print(commonChar("Eren", "Yeager"))
 
 # function to solve quadratic equation taking in each term as parameter
 def quadSolve(A, B, C):
-    if (B**2)-4*(A)*(C) == 0:
+
+    discrim = (B**2)-4*(A)*(C)
+
+    if discrim == 0:
         numSolutions = 1
-    elif (B**2)-4*(A)*(C) > 0:
+    elif discrim > 0:
         numSolutions = 2
-    elif (B**2)-4*(A)*(C) < 0:
-        return ("There are no real solutions")
+    elif discrim < 0:
+        numSolutions = 0
 
     firstSolution = (-B + math.sqrt(B**2 - 4*A*C)) / (2*A)
     secondSolution = (-B - math.sqrt(B**2 - 4*A*C)) / (2*A)
