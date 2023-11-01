@@ -156,7 +156,10 @@ if __name__ == '__main__':
 # In the code above, inside the function should return the area instead of printing it.
 # in its current state, printing the result of calling the function results in a recursion error. Also its best practice to return values instead of printing them
 # rather than using print() within functions.
-# but another way to fix that code would've been to 
+
+# but another way to fix that code could've been to use the function without printing it.
+# instead of printing the result of the function, you can just remove the print statement in front of area_of_triangle(4.5, 1.0). in other words, the function already prints the area.
+# so printing the function is redundant
 
 # Fixed version which calculates area of triangle with bottom/height as parameters
 def area_of_triangle(bottom, height):
