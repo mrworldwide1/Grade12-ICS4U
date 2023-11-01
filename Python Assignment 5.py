@@ -10,7 +10,7 @@ from pcinput import getInteger
 # Exercise 8.1 Create a function that gets a number as parameter, and then prints the mulitiplication table for that number from 1 to 10.
 # E.g., when the parameter is 12, the first line printed is “1 * 12 = 12” and the last line printed is “10 * 12 = 120.”
 
-# function that inputs number and prints multiplication table for it
+# function that takes number as parameter and prints multiplication table for it
 def multiTable(num):
     # multiply specified number by an incrementing i value
     for i in range(10):
@@ -27,7 +27,7 @@ multiTable(12)
 # number of characters that the strings have in common, and not print it. To test the function,
 # you can print the result in your main program.
 
-# takes in two strings and return number of characters that both have in common
+# take in two strings and return number of characters that both have in common
 def commonChar(a, b):
     letters = []
     commonLetters = []
@@ -68,11 +68,10 @@ def piSeries(n):
     for i in range(n):
         m+=2
         numerator = numerator * -1
-        print(numerator/m)
         bracket += (numerator/m)
+        print(numerator/m)
         print(bracket)
 
-    
     return 4 * (bracket)
 
 print(piSeries(2))
