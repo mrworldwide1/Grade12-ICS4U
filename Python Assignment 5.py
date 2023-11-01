@@ -57,14 +57,14 @@ def piSeries(n):
     bracket = 1
     m = 1
     numerator = 1
-    # if no terms in bracket
+    # if no terms in parenthesis
     if n <= 0:
         return 0
-        # if one term in breacket
+        # if one term in parenthesis
     elif n == 1:
         return 4
 
-    # if >1 term
+    # if >1 term between parenthesis
     for i in range(n-1):
         m+=2
         numerator = numerator * -1
@@ -74,7 +74,10 @@ def piSeries(n):
 
     return 4 * (bracket)
 
+print(piSeries(0))
+print(piSeries(1))
 print(piSeries(2))
+print(piSeries(3))
 
 
 # Exercise 8.4 
