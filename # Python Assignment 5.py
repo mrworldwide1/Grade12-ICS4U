@@ -53,12 +53,29 @@ print(commonChar("Eren", "Yeager"))
 # 1/9...). Write a function that returns the approximation of pi according to this series. The
 # function gets one parameter, namely an integer that indicates how many of the terms between the parentheses must be calculated.
 
-# def piSeries(termAmount):
-#      amount = 1
-#      term = 1/amount
-#      for i in range(termAmount):
-#          term = 1/(amount+2)
-#      approx = 4 * 
+def piSeries(n):
+    bracket = 1
+    m = 1
+    numerator = 1
+    # if no terms in bracket
+    if n <= 0:
+        return 0
+        # if one term in breacket
+    elif n == 1:
+        return 4
+
+    # if >1 term
+    for i in range(n):
+        m+=2
+        numerator = numerator * -1
+        print(numerator/m)
+        bracket += (numerator/m)
+        print(bracket)
+
+    
+    return 4 * (bracket)
+
+print(piSeries(2))
 
 
 # Exercise 8.4 
