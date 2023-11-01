@@ -112,6 +112,9 @@ def quadSolve(A, B, C):
 
 # test function
 print(quadSolve(-1, 3, -5))
+print(quadSolve(1, 8, 16))
+print(quadSolve(1, 8, 12))
+
 
 # Exercise 8.5 In Chapter 7, the loop-and-a-half was explained. The final code for the ex-
 # ample that was presented is given below, and I made the remark that there is still something
