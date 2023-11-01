@@ -102,6 +102,8 @@ print(quadSolve(-1, 3, -5))
 # insert it in this code, so that this issue gets fixed. Also get rid of the exit() and thus the
 # possible ugly output by introducing a main() function.
 
+# no need to create a new function. I just added a conditional to the pcinput getinteger function
+# to ask for new num if its <0 or >1000.
 def main():
   while True:
     x = getInteger("Enter number 1: ")
