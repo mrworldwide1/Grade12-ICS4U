@@ -1,4 +1,5 @@
 import math
+from pcinput import getInteger
 
 # Python Assignment 5
 # In these exercises you write functions. Of course, you should not only write the functions,
@@ -93,11 +94,31 @@ def quadSolve(A, B, C):
 
 print(quadSolve(-1, 3, -5))
 
-# Exercise 8.5 In Chapter 7, the loop-and-a-half was explained. The final code for the example that was presented is given below, and I made the remark that there is still something
-# ugly about this code, namely the fact that if is smaller than zero or higher than 1000, the
-# code still asks for even when it can know that it has to ask a new value for . I also re-
+# Exercise 8.5 In Chapter 7, the loop-and-a-half was explained. The final code for the ex-
+# ample that was presented is given below, and I made the remark that there is still something
+# ugly about this code, namely the fact that if x is smaller than zero or higher than 1000, the
+# code still asks for y even when it can know that it has to ask a new value for x. I also re-
 # marked that you can resolve this in an easy way by using a function. Create a function and
-# insert it in this code, so that this issue gets fixed. Also get rid of the () and thus the possible ugly output by introducing a main () function.
+# insert it in this code, so that this issue gets fixed. Also get rid of the exit() and thus the
+# possible ugly output by introducing a main() function.
+
+def main():
+  while True:
+    x = getInteger("Enter number 1: ")
+    if x == 0:
+      break
+    y = getInteger("Enter number 2: ")
+    if y == 0:
+      break
+    if x%y == 0 or y%x == 0:
+      print("Error: the numbers cannot be dividers")
+      return
+    print(f"Multiplicaiton of {x} and {y} gives {x*y}")
+  print("goodbye!")
+
+if __name__ == '__main__':
+  main()
+
 
 # Exercise 8.7 - What is wrong with the following code? Fix it!
 
