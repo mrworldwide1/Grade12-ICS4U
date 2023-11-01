@@ -99,22 +99,6 @@ print(quadSolve(-1, 3, -5))
 # marked that you can resolve this in an easy way by using a function. Create a function and
 # insert it in this code, so that this issue gets fixed. Also get rid of the () and thus the possible ugly output by introducing a main () function.
 
-
-
-# Exercise 8.6 In statistics, the binomial coefficient indexed by and (often expressed as
-# “n over k,” whereby must be bigger than or equal to ) is calculated as n!/(k! ∗ (n − k)!),
-# whereby n! indicates the factorial of . As I explained in Chapter 7: the factorial of a positive
-# integer is that integer, multiplied by all positive integers that are lower (excluding zero). You
-# write the factorial as the number with an exclamation mark after it. E.g., the factorial of 5
-# is 5! = 5 ∗ 4 ∗ 3 ∗ 2 ∗ 1 = 120. If you did all the exercises until now, you wrote some code
-# for this. Write a function that calculates the binomial coefficient for its two parameters, and
-# returns the value. Write the code in such a way that it can be used as a module by another
-# program (i.e., put the tests of your program in a () function that is called as explained
-# above).
-
-def binoCoeff(a, b):
-    pass
-
 # Exercise 8.7 - What is wrong with the following code? Fix it!
 
 # def area_of_triangle(bottom, height):
