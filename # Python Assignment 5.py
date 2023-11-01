@@ -108,3 +108,6 @@ print(quadSolve(-1, 3, -5))
 
 def binoCoeff(a, b):
     pass
+
+# Exercise 8.7 - What is wrong with the following code? Fix it!
+
