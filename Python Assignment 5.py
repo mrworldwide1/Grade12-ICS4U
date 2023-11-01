@@ -65,7 +65,7 @@ def piSeries(n):
         return 4
 
     # if >1 term
-    for i in range(n):
+    for i in range(n-1):
         m+=2
         numerator = numerator * -1
         bracket += (numerator/m)
