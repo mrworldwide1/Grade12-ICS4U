@@ -63,14 +63,14 @@ def piSeries(n):
 
     parentheses = 1
 
-    # loops through to calculate specified num of terms
+    # loops through to calculate specified num of terms and accumulate terms between parentheses
     for i in range(n-1):
         denominator += 2
         # flip sign of fraction
         numerator = numerator * -1
-        # accumulate terms between parentheses
         parentheses += (numerator/denominator)
 
+    # return approximation of pi
     return (f"Approximation of pi: {4 * parentheses}")
 
 # test function
