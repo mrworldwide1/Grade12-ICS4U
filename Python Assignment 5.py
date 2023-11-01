@@ -31,18 +31,17 @@ multiTable(12)
 def commonChar(a, b):
     letters = []
     commonLetters = []
-    commonNum = 0
-    
-    # add common letters to list and increment sum
+
+    # check each letter in alphabet against the two input strings
     for char in "abcdefghijklmnopqrstuvwxyz":
+        # add letter to list if common and not already present
         if (char in a and char in b) and (char not in commonLetters):
             commonLetters.append(char)
-            commonNum += 1
     for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        # add letter to list if common and not already present
         if (char in a and char in b) and (char not in commonLetters):
             commonLetters.append(char)
-            commonNum += 1
-    return commonNum
+    return len(commonLetters)
 
 # test function
 print(commonChar("bee", "pear"))
@@ -54,26 +53,25 @@ print(commonChar("Eren", "Yeager"))
 # function gets one parameter, namely an integer that indicates how many of the terms between the parentheses must be calculated.
 
 def piSeries(n):
-    bracket = 0
+    parentheses = 0
     denominator = 1
     numerator = 1
 
-    # return approximation if number of terms between parentheses is <1
+    # return approximation of pi if no terms between parentheses
     if n <= 0:
-        return (f"Approximation of pi: {4 * bracket}")
-    # if one term in parentheses
-    elif n == 1:
-        bracket += (numerator/denominator)
-        return (f"Approximation of pi: {4 * bracket}")
+        return (f"Approximation of pi: {4 * parentheses}")
 
-    # if >1 terms between parentheses, calculate sum of the terms between parentheses
-    bracket = 1
+    parentheses = 1
+
+    # loops through to calculate specified num of terms
     for i in range(n-1):
         denominator += 2
+        # flip sign of fraction
         numerator = numerator * -1
-        bracket += (numerator/denominator)
+        # accumulate terms between parentheses
+        parentheses += (numerator/denominator)
 
-    return (f"Approximation of pi: {4 * bracket}")
+    return (f"Approximation of pi: {4 * parentheses}")
 
 # test function
 print(piSeries(0))
@@ -126,7 +124,7 @@ print(quadSolve(-1, 3, -5))
 # insert it in this code, so that this issue gets fixed. Also get rid of the exit() and thus the
 # possible ugly output by introducing a main() function.
 
-# you don't need to create a function and thus add extra complexity. I just added a conditional to the pcinput getinteger function to ask for new number if its < 0 or > 1000.
+# you don't need to create a function and add extra complexity. I just added a while loop to the pcinput getinteger function to ask for new number if its < 0 or > 1000.
 def main():
   while True:
     x = getInteger("Enter number 1: ")
@@ -158,8 +156,8 @@ if __name__ == '__main__':
 # rather than using print() within functions.
 
 # but another way to fix that code could've been to use the function without printing it.
-# instead of printing the result of the function, you can just remove the print statement in front of area_of_triangle(4.5, 1.0). in other words, the function already prints the area.
-# so printing the function is redundant
+# instead of printing the result of the function, you can just remove the print statement in front of area_of_triangle(4.5, 1.0). in other words, the function itself already prints the area.
+# so printing the function is redundant.
 
 # Fixed version which calculates area of triangle with bottom/height as parameters
 def area_of_triangle(bottom, height):
