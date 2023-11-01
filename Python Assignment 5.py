@@ -72,7 +72,7 @@ def piSeries(n):
         print(numerator/m)
         print(bracket)
 
-    return 4 * (bracket)
+    return (f"Approximation of pi: {4 * bracket}")
 
 print(piSeries(0))
 print(piSeries(1))
