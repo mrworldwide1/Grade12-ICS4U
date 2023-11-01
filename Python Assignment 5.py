@@ -54,23 +54,24 @@ print(commonChar("Eren", "Yeager"))
 # function gets one parameter, namely an integer that indicates how many of the terms between the parentheses must be calculated.
 
 def piSeries(n):
-    bracket = 1
-    m = 1
+    bracket = 0
+    denominator = 1
     numerator = 1
-    # if no terms in parenthesis
-    if n <= 0:
-        return 0
-        # if one term in parenthesis
-    elif n == 1:
-        return 4
 
-    # if >1 term between parenthesis
+    # return approximation if number of terms between parentheses is <1
+    if n <= 0:
+        return (f"Approximation of pi: {4 * bracket}")
+    # if one term in parentheses
+    elif n == 1:
+        bracket += (numerator/denominator)
+        return (f"Approximation of pi: {4 * bracket}")
+
+    # if >1 terms between parentheses, calculate sum of the terms between parentheses
+    bracket = 1
     for i in range(n-1):
-        m+=2
+        denominator += 2
         numerator = numerator * -1
-        bracket += (numerator/m)
-        print(numerator/m)
-        print(bracket)
+        bracket += (numerator/denominator)
 
     return (f"Approximation of pi: {4 * bracket}")
 
