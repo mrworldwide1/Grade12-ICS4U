@@ -75,6 +75,7 @@ def piSeries(n):
 
     return (f"Approximation of pi: {4 * bracket}")
 
+# test function
 print(piSeries(0))
 print(piSeries(1))
 print(piSeries(2))
@@ -101,10 +102,12 @@ def quadSolve(A, B, C):
         # formula for x-coord of vertex
         firstSolution = (-B) / (2*A)
         secondSolution = 0
+    # 2 solutions
     elif discrim > 0:
         numSolutions = 2
         firstSolution = (-B + math.sqrt(B**2 - 4*A*C)) / (2*A)
         secondSolution = (-B - math.sqrt(B**2 - 4*A*C)) / (2*A)
+    # no solutions
     elif discrim < 0:
         numSolutions = 0
         firstSolution = 0
@@ -112,6 +115,7 @@ def quadSolve(A, B, C):
 
     return(f"Number of solutions: {numSolutions}, first solution: {firstSolution}, second solution: {secondSolution}")
 
+# test function
 print(quadSolve(-1, 3, -5))
 
 # Exercise 8.5 In Chapter 7, the loop-and-a-half was explained. The final code for the ex-
@@ -122,8 +126,7 @@ print(quadSolve(-1, 3, -5))
 # insert it in this code, so that this issue gets fixed. Also get rid of the exit() and thus the
 # possible ugly output by introducing a main() function.
 
-# no need to create a new function. I just added a conditional to the pcinput getinteger function
-# to ask for new num if its <0 or >1000.
+# you don't need to create a function and thus add extra complexity. I just added a conditional to the pcinput getinteger function to ask for new number if its < 0 or > 1000.
 def main():
   while True:
     x = getInteger("Enter number 1: ")
@@ -135,7 +138,7 @@ def main():
     if x%y == 0 or y%x == 0:
       print("Error: the numbers cannot be dividers")
       return
-    print(f"Multiplicaiton of {x} and {y} gives {x*y}")
+    print(f"Multiplication of {x} and {y} gives {x*y}")
   print("goodbye!")
 
 if __name__ == '__main__':
@@ -151,11 +154,14 @@ if __name__ == '__main__':
 # print( area_of_triangle( 4.5, 1.0) )
 
 # In the code above, inside the function should return the area instead of printing it.
-# in its current state, printing the result of calling the function results in a recursion error. Also its best practice to return values
+# in its current state, printing the result of calling the function results in a recursion error. Also its best practice to return values instead of printing them
 # rather than using print() within functions.
+# addtionally its not required but the brackets can be removed from the return statement for cleaner code
 
-# Fixed version:
+# Fixed version which calculates area of triangle with bottom/height as parameters
 def area_of_triangle(bottom, height):
     area = 0.5 * bottom * height
-    return("The area of a triangle with a bottom of", bottom, "and a height of", height, "is", area)
+    return "The area of a triangle with a bottom of", bottom, "and a height of", height, "is", area
+
+# test function
 print(area_of_triangle(4.5, 1.0))
