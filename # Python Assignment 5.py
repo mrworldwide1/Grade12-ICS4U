@@ -71,17 +71,23 @@ print(commonChar("Eren", "Yeager"))
 # function to solve quadratic equation taking in each term as parameter
 def quadSolve(A, B, C):
 
+    # calculate discriminant
     discrim = (B**2)-4*(A)*(C)
 
+    # check value of discriminant and output answers accordingly
     if discrim == 0:
         numSolutions = 1
+        # formula for x-coord of vertex
+        firstSolution = (-B) / (2*A)
+        secondSolution = 0
     elif discrim > 0:
         numSolutions = 2
+        firstSolution = (-B + math.sqrt(B**2 - 4*A*C)) / (2*A)
+        secondSolution = (-B - math.sqrt(B**2 - 4*A*C)) / (2*A)
     elif discrim < 0:
         numSolutions = 0
-
-    firstSolution = (-B + math.sqrt(B**2 - 4*A*C)) / (2*A)
-    secondSolution = (-B - math.sqrt(B**2 - 4*A*C)) / (2*A)
+        firstSolution = 0
+        secondSolution = 0
 
     return(f"Number of solutions: {numSolutions}, first solution: {firstSolution}, second solution: {secondSolution}")
 
@@ -111,3 +117,18 @@ def binoCoeff(a, b):
 
 # Exercise 8.7 - What is wrong with the following code? Fix it!
 
+# def area_of_triangle(bottom, height):
+#     area = 0.5 * bottom * height
+#     print( "The area of a triangle with a bottom of", bottom,
+#     "and a height of", height, "is", area )
+# print( area_of_triangle( 4.5, 1.0) )
+
+# In the code above, inside the function should return the area instead of printing it.
+# in its current state, printing the result of calling the function results in a recursion error. Also its best practice to return values
+# rather than using print() within functions.
+
+# Fixed version:
+def area_of_triangle(bottom, height):
+    area = 0.5 * bottom * height
+    return("The area of a triangle with a bottom of", bottom, "and a height of", height, "is", area)
+print(area_of_triangle(4.5, 1.0))
