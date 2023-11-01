@@ -3,9 +3,7 @@ from pcinput import getInteger
 
 # Python Assignment 5
 # In these exercises you write functions. Of course, you should not only write the functions,
-# you should also write code to test them. For practice, you should also comment your func-
-# tions as explained above.
-
+# you should also write code to test them. For practice, you should also comment your functions as explained above.
 
 # Exercise 8.1 Create a function that gets a number as parameter, and then prints the mulitiplication table for that number from 1 to 10.
 # E.g., when the parameter is 12, the first line printed is “1 * 12 = 12” and the last line printed is “10 * 12 = 120.”
@@ -69,7 +67,6 @@ def piSeries(n):
         # flip sign of fraction
         numerator = numerator * -1
         parentheses += (numerator/denominator)
-
     # return approximation of pi
     return (f"Approximation of pi: {4 * parentheses}")
 
